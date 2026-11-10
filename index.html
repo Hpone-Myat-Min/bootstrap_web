@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-B/GM4XqrwHnWXNOWMbloTmrYXZg10cakYGmpfsR/bbzQ6JAJI4ihuyADKLnBgrCe"
+      crossorigin="anonymous"
+    />
+    <script
+      defer
+      type="module"
+      src="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-1a/pXj49ZQ1aHEmrJ+gMw1otqoVsYwlEnlD8mIfY2TV03r20Y0CN7uqx1tQogjPL"
+      crossorigin="anonymous"
+    ></script>
+    <title>Boat Tours - Book with us</title>
+  </head>
+  <body>
+    <nav class="navbar md:navbar-expand bg-primary" data-bs-theme="dark">
+      <div class="container">
+        <a class="navbar-brand" href="#">Boat Tours</a>
+        <button
+          class="btn-icon navbar-toggler"
+          type="button"
+          data-bs-toggle="drawer"
+          data-bs-target="#navbarLeftDrawer"
+          aria-controls="navbarLeftDrawer"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon" aria-hidden="true"></span>
+        </button>
+        <dialog
+          class="drawer drawer-start"
+          tabindex="-1"
+          id="navbarLeftDrawer"
+          aria-labelledby="navbarLeftDrawerLabel"
+        >
+          <div class="drawer-header">
+            <h5 class="drawer-title" id="navbarLeftDrawerLabel">Menu</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="drawer"
+              aria-label="Close"
+            ></button>
+          </div>
+
+          <div class="drawer-body">
+            <ul class="navbar-nav me-auto mb-2 md:mb-0 ms-auto">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item"><a class="nav-link" href="#">Link</a></li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Disabled</a>
+              </li>
+            </ul>
+          </div>
+        </dialog>
+      </div>
+    </nav>
+
+    <!-- IMAGES IN CAROUSEL SLIDE -->
+
+    <div
+      id="carouselExampleDark"
+      class="carousel carousel-overlay slide"
+      data-bs-theme="dark"
+    >
+      <div class="carousel-inner">
+        <div class="carousel-item active c-item" data-bs-interval="10000">
+          <div class="carousel-caption d-none d-md-block">
+            <h3>Style it your way</h3>
+            <p class="fg-emphasis-secondary mb-3">
+              Use utilities or custom CSS to size and theme each slide however
+              you need.
+            </p>
+          </div>
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-LfiExmh5yGYwXeZ1tytudL1wvboRUfsccoktBdVhIA&s=10"
+            class="d-block w-100 rounded-5 cimg"
+            alt="..."
+          />
+        </div>
+        <div class="carousel-item c-item" data-bs-interval="2000">
+          <img
+            src="https://thumbs.dreamstime.com/b/tourist-motorboat-nile-river-luxor-egypt-33947982.jpg"
+            class="d-block w-100 rounded-5 cimg"
+            alt="..."
+          />
+        </div>
+        <div class="carousel-item c-item">
+          <img
+            src="https://www.broadstours.co.uk/wp-content/uploads/2026/07/qob-header-26.webp"
+            class="d-block w-100 rounded-5 cimg"
+            alt="..."
+          />
+        </div>
+      </div>
+
+      <!-- CONTROL BUTTONS -->
+
+      <div class="carousel-overlay-controls">
+        <button
+          class="btn-icon btn-lg btn-solid theme-primary"
+          type="button"
+          data-bs-target="#carouselExampleDark"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-icon-prev" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleDark"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleDark"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleDark"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <button
+          class="btn-icon btn-sm btn-subtle theme-secondary"
+          type="button"
+          data-bs-target="#carouselExampleDark"
+          data-bs-slide="next"
+        >
+          <span class="carousel-icon-next" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </body>
+</html>
