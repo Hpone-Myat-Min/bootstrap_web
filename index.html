@@ -5,18 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/css/bootstrap.min.css"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      integrity="sha384-B/GM4XqrwHnWXNOWMbloTmrYXZg10cakYGmpfsR/bbzQ6JAJI4ihuyADKLnBgrCe"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
       crossorigin="anonymous"
     />
+
     <script
-      defer
-      type="module"
-      src="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-1a/pXj49ZQ1aHEmrJ+gMw1otqoVsYwlEnlD8mIfY2TV03r20Y0CN7uqx1tQogjPL"
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
       crossorigin="anonymous"
     ></script>
+
     <title>Boat Tours - Book with us</title>
   </head>
   <body>
@@ -65,88 +65,85 @@
       </div>
     </nav>
 
-    <!-- IMAGES IN CAROUSEL SLIDE -->
-
-    <div
-      id="carouselExampleDark"
-      class="carousel carousel-overlay slide"
-      data-bs-theme="dark"
-    >
+    <div id="carouselExampleDark" class="carousel carousel-dark slide">
       <div class="carousel-inner">
-        <div class="carousel-item active c-item" data-bs-interval="10000">
+        <div class="carousel-item active" data-bs-interval="10000">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/4/4a/Nile_Tour_Boat_R02.jpg?utm_source=en.wikipedia.org&utm_campaign=index&utm_content=original"
+            class="d-block w-100"
+            alt="..."
+          />
           <div class="carousel-caption d-none d-md-block">
-            <h3>Style it your way</h3>
-            <p class="fg-emphasis-secondary mb-3">
-              Use utilities or custom CSS to size and theme each slide however
-              you need.
-            </p>
+            <h5>First slide label</h5>
+            <p>Some representative placeholder content for the first slide.</p>
           </div>
-          <img
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-LfiExmh5yGYwXeZ1tytudL1wvboRUfsccoktBdVhIA&s=10"
-            class="d-block w-100 rounded-5 cimg"
-            alt="..."
-          />
         </div>
-        <div class="carousel-item c-item" data-bs-interval="2000">
+        <div class="carousel-item" data-bs-interval="2000">
           <img
-            src="https://thumbs.dreamstime.com/b/tourist-motorboat-nile-river-luxor-egypt-33947982.jpg"
-            class="d-block w-100 rounded-5 cimg"
+            src="https://upload.wikimedia.org/wikipedia/commons/4/4a/Nile_Tour_Boat_R02.jpg?utm_source=en.wikipedia.org&utm_campaign=index&utm_content=original"
+            class="d-block w-100"
             alt="..."
           />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Second slide label</h5>
+            <p>Some representative placeholder content for the second slide.</p>
+          </div>
         </div>
-        <div class="carousel-item c-item">
+        <div class="carousel-item">
           <img
-            src="https://www.broadstours.co.uk/wp-content/uploads/2026/07/qob-header-26.webp"
-            class="d-block w-100 rounded-5 cimg"
+            src="https://upload.wikimedia.org/wikipedia/commons/4/4a/Nile_Tour_Boat_R02.jpg?utm_source=en.wikipedia.org&utm_campaign=index&utm_content=original"
+            class="d-block w-100"
             alt="..."
           />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Third slide label</h5>
+            <p>Some representative placeholder content for the third slide.</p>
+          </div>
         </div>
       </div>
 
-      <!-- CONTROL BUTTONS -->
-
-      <div class="carousel-overlay-controls">
+      <div class="carousel-indicators">
         <button
-          class="btn-icon btn-lg btn-solid theme-primary"
           type="button"
           data-bs-target="#carouselExampleDark"
-          data-bs-slide="prev"
-        >
-          <span class="carousel-icon-prev" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <div class="carousel-indicators">
-          <button
-            type="button"
-            data-bs-target="#carouselExampleDark"
-            data-bs-slide-to="0"
-            class="active"
-            aria-current="true"
-            aria-label="Slide 1"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleDark"
-            data-bs-slide-to="1"
-            aria-label="Slide 2"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleDark"
-            data-bs-slide-to="2"
-            aria-label="Slide 3"
-          ></button>
-        </div>
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
         <button
-          class="btn-icon btn-sm btn-subtle theme-secondary"
           type="button"
           data-bs-target="#carouselExampleDark"
-          data-bs-slide="next"
-        >
-          <span class="carousel-icon-next" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleDark"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
       </div>
+
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleDark"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleDark"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
   </body>
 </html>
