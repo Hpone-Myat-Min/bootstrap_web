@@ -7,10 +7,19 @@
 .cimg {
     height: 100%;
     object-fit: cover;
+    
 }
 
 .carousel-caption {
-    background-color: rgba(0, 0, 0, 0.6);
     padding: 15px;
     border-radius: 10px;
+    text-align: center;
+    top: 50%;
+    bottom: auto;
+    transform: translateY(-50%);
+}
+
+.carousel-caption h5 {
+    font-size: 3rem;
+    font-weight: 700;
 }
