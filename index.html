@@ -20,20 +20,34 @@
     <title>Boat Tours - Book with us</title>
   </head>
   <body>
-    <nav class="navbar md:navbar-expand bg-primary" data-bs-theme="dark">
-      <div class="container">
+    <nav class="navbar navbar-expand-md bg-primary" data-bs-theme="dark">
+      <div class="container-fluid">
         <a class="navbar-brand" href="#">Boat Tours</a>
+
         <button
           class="btn-icon navbar-toggler"
           type="button"
-          data-bs-toggle="drawer"
-          data-bs-target="#navbarLeftDrawer"
-          aria-controls="navbarLeftDrawer"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span class="navbar-toggler-icon" aria-hidden="true"></span>
+          <span class="navbar-toggler-icon"></span>
         </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#">Link</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Disabled</a>
+            </li>
+          </ul>
+        </div>
+
         <dialog
           class="drawer drawer-start"
           tabindex="-1"
