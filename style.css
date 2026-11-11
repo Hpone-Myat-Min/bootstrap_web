@@ -1,13 +1,13 @@
-.c-item {
+.carousel-item {
 
-    height: 400px;    
+    height: 500px;    
 
 }
 
-.cimg {
+.carousel-item img {
     height: 100%;
     object-fit: cover;
-    
+
 }
 
 .carousel-caption {
