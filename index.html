@@ -89,46 +89,50 @@
     >
       <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
-          <div class="modal-header">
-            <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
-          </div>
           <div class="modal-body">
             <form class="px-4 m-4">
               <h3 class="fs-1 margin text-center">Book a tour!</h3>
 
-              <div class="mb-3">
-                <label for="userInput" class="form-label">Name</label>
-                <input
-                  type="text"
-                  id="userInput"
-                  aria-label="First name"
-                  class="form-control"
-                />
-              </div>
-
-              <div class="mb-3">
-                <label for="exampleInputEmail1" class="form-label"
-                  >Email address</label
-                >
-                <input
-                  type="email"
-                  class="form-control"
-                  id="exampleInputEmail1"
-                  aria-describedby="emailHelp"
-                />
-                <div id="emailHelp" class="form-text">
-                  We'll never share your email with anyone else.
+              <div class="row g-2">
+                <div class="col-sm-6">
+                  <div class="mb-3">
+                    <label for="userInput" class="form-label">Name</label>
+                    <input
+                      type="text"
+                      id="userInput"
+                      aria-label="First name"
+                      class="form-control"
+                    />
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label"
+                      >Email address</label
+                    >
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="exampleInputEmail1"
+                      aria-describedby="emailHelp"
+                    />
+                    <!-- <div id="emailHelp" class="form-text">
+                      We'll never share your email with anyone else.
+                    </div> -->
+                  </div>
                 </div>
               </div>
-              <div class="mb-3">
-                <label for="travelDate" class="form-label">Date</label>
+              <div class="mb-3 form-floating">
+                <select class="form-select" id="Packages">
+                  <option value="1">Brighton, UK - $399</option>
+                  <option value="2">Phuket, Thailand - $999</option>
+                  <option value="3">Bali, Indonesia - $888</option>
+                </select>
+                <label for="Packages">Pick a tour</label>
+              </div>
+              <div class="mb-3 form-floating">
                 <input type="date" class="form-control" id="travelDate" />
+                <label for="travelDate" class="form-label">Date</label>
               </div>
             </form>
           </div>
