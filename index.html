@@ -121,9 +121,6 @@
                       id="exampleInputEmail1"
                       aria-describedby="emailHelp"
                     />
-                    <!-- <div id="emailHelp" class="form-text">
-                      We'll never share your email with anyone else.
-                    </div> -->
                   </div>
                 </div>
               </div>
@@ -149,11 +146,49 @@
             >
               Close
             </button>
-            <button type="submit" class="btn btn-primary">Submit</button>
+            <button
+              data-bs-toggle="modal"
+              data-bs-target="#confirmModal"
+              type="submit"
+              class="btn btn-primary"
+            >
+              Submit
+            </button>
           </div>
         </div>
       </div>
     </div>
+
+    <!-- CONFIRMATION MODAL -->
+
+    <div class="modal" tabindex="-1" id="confirmModal">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Booking Confirmation!</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p>Thank you for booking with us!</p>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    ;
 
     <!-- FORM TO BOOK TOUR -->
 
