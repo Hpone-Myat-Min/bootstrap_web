@@ -51,11 +51,32 @@
               <a class="nav-link" href="#packages">Packages</a>
             </li>
           </ul>
-          <div class="navbar-nav flex-shrink-1" data-bs-theme="dark">
-            <a class="nav-link" href="#packages">
+
+          <div class="dropdown flex-shrink-0">
+            <button
+              class="btn btn-secondary dropdown-toggle"
+              type="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <i class="d-none d-md-inline bi-person-fill"></i>
+            </button>
+            <!-- <a
+              class="btn btn-secondary dropdown-toggle"
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
               <span class="d-md-none m-0 p-0">Account</span>
-              <i class="d-none d-md-inline bi-person-fill"></i
-            ></a>
+              <i class="d-none d-md-inline bi-person-fill"></i>
+            </a> -->
+
+            <ul class="dropdown-menu dropdown-menu-end">
+              <li><a href="account.html" class="dropdown-item">Account</a></li>
+              <li><a href="#" class="dropdown-item">Help</a></li>
+              <li><a href="#" class="dropdown-item">Settings</a></li>
+            </ul>
           </div>
         </div>
       </div>

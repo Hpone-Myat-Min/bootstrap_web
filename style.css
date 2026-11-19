@@ -37,3 +37,25 @@
     height: 200px;
     object-fit: cover;
 }
+
+/* ACCOUNT PAGE */
+.person {
+
+    flex-shrink: 0;
+    height: 100px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.person i {
+    font-size: 75px;
+}
+.welcome {
+    min-height: 200px;
+    border-bottom: 1px solid gray;
+}
+
+.welcome-info {
+    flex: 1;
+}
