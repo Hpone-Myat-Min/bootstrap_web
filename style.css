@@ -39,6 +39,9 @@
 }
 
 /* ACCOUNT PAGE */
+body {
+    max-width: 1000px;
+}
 .person {
 
     flex-shrink: 0;
