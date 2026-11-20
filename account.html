@@ -66,7 +66,7 @@
         </div>
       </div>
     </nav>
-    <div class="container-md mx-auto p-0">
+    <div class="container container-md mx-auto p-0">
       <div
         class="welcome d-flex flex-column flex-sm-row align-items-center gap-4"
       >
@@ -86,7 +86,7 @@
           aria-orientation="vertical"
         >
           <button
-            class="nav-link"
+            class="nav-link active"
             id="v-pills-home-tab"
             data-bs-toggle="pill"
             data-bs-target="#v-pills-home"
@@ -95,7 +95,7 @@
             aria-controls="v-pills-home"
             aria-selected="true"
           >
-            Home
+            Profile
           </button>
           <button
             class="nav-link"
@@ -107,23 +107,10 @@
             aria-controls="v-pills-profile"
             aria-selected="false"
           >
-            Profile
+            My Bookings
           </button>
           <button
             class="nav-link"
-            id="v-pills-disabled-tab"
-            data-bs-toggle="pill"
-            data-bs-target="#v-pills-disabled"
-            type="button"
-            role="tab"
-            aria-controls="v-pills-disabled"
-            aria-selected="false"
-            disabled
-          >
-            Disabled
-          </button>
-          <button
-            class="nav-link active"
             id="v-pills-messages-tab"
             data-bs-toggle="pill"
             data-bs-target="#v-pills-messages"
@@ -132,7 +119,7 @@
             aria-controls="v-pills-messages"
             aria-selected="false"
           >
-            Messages
+            Appearance
           </button>
           <button
             class="nav-link"
@@ -144,7 +131,7 @@
             aria-controls="v-pills-settings"
             aria-selected="false"
           >
-            Settings
+            Sign out
           </button>
         </div>
         <div class="tab-content flex-grow-1" id="v-pills-tab-content">
@@ -208,7 +195,43 @@
             aria-labelledby="v-pills-profile-tab"
             tabindex="0"
           >
-            ...
+            <div class="newBookings">
+              <h2 class="booking-headings">Upcoming Bookings</h2>
+
+              <div class="card mb-3" style="min-height: 200px">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img
+                      src="photo2.jpeg"
+                      class="img-fluid rounded-start p-3"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">Boat Tour</h5>
+                      <p class="card-text">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing
+                        elit. Itaque, mollitia. Autem modi doloribus adipisci,
+                        cupiditate nemo harum eaque eveniet quos, ipsa dolorum
+                        tempore eligendi aut, necessitatibus ea distinctio est
+                        laudantium?
+                      </p>
+                      <p class="card-text">
+                        <a href="#"
+                          ><small class="text-body-secondary"
+                            >View booking summary</small
+                          ></a
+                        >
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="pastBookings">
+              <h2 class="booking-headings">Previous bookings</h2>
+            </div>
           </div>
           <div
             class="tab-pane fade"
